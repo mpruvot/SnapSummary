@@ -23,7 +23,7 @@ class WebScraper:
             List[str]: A list of URLs corresponding to the search results.
         """
         result = search(user_input, num_results=limit)
-        return [r.url for r in result]
+        return [r for r in result]
 
 
     def _make_request(self, url: str):
